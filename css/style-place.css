@@ -1,0 +1,78 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ff0000;
+  }
+  
+  /* Text Selection */
+  ::selection {
+    background: #ff0000;
+    color: white;
+  }
+  
+  /* Image Hover Effects */
+  .img-hover-effect {
+    transition: transform 0.5s, filter 0.5s;
+    filter: grayscale(20%);
+  }
+  
+  .img-hover-effect:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%) contrast(110%);
+  }
+  
+  /* Special Typography */
+  .rock-font {
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+  }
+  
+  /* Glitch Effect (Optional) */
+  .glitch {
+    position: relative;
+  }
+  .glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+  .glitch::before {
+    color: #0ff;
+    z-index: -1;
+    animation: glitch-effect 3s infinite;
+  }
+  .glitch::after {
+    color: #f0f;
+    z-index: -2;
+    animation: glitch-effect 2s infinite reverse;
+  }
+  @keyframes glitch-effect {
+    0% { transform: translate(0); }
+    20% { transform: translate(-3px, 3px); }
+    40% { transform: translate(-3px, -3px); }
+    60% { transform: translate(3px, 3px); }
+    80% { transform: translate(3px, -3px); }
+    100% { transform: translate(0); }
+  }
+
+
+  .historical-title {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+@media (max-width: 430px) {
+    .historical-title {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,33 @@
+/* Стили для билетов */
+.ticket-card {
+    transition: transform 0.3s;
+  }
+  
+  .ticket-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Анимации для кнопок */
+  .btn-outline-danger, .btn-outline-warning, 
+  .btn-outline-light, .btn-outline-secondary {
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-outline-danger:hover, .btn-outline-warning:hover, 
+  .btn-outline-light:hover, .btn-outline-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+  }
+  
+  /* Эффект для VIP билета */
+  .ticket-card:nth-child(1) .img-fluid {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+  
+  /* Иконки */
+  .list-unstyled i {
+    width: 20px;
+    text-align: center;
+  }

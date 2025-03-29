@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-con.css">
+  </head>
+  <body>
+    
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Linkin Park" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Концерт</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Люди</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tickets.html">Где были</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="place.html">Альбомы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" style="
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('images/linkinpark.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+">
+    <!-- Затемнение для лучшей читаемости текста -->
+    <div class="position-absolute top-0 left-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
+    
+    <div class="container position-relative z-index-1">
+        <h1 class="display-3 fw-bold text-uppercase" style="text-shadow: 0 0 10px #ff0000;">ROCKSTORM <span class="text-danger">EVENTS</span></h1>
+        <p class="lead fs-2">Организуем легендарные концерты</p>
+        <a href="#main-content" class="btn btn-outline-light btn-lg px-4 py-2 mt-4">НАШИ КОНТАКТЫ</a>
+    </div>
+    
+    <!-- Дополнительный эффект (необязательно) -->
+    <div class="position-absolute bottom-0 left-0 w-100" style="height: 100px; background: linear-gradient(to top, #000, transparent);"></div>
+</section>
+
+    <!-- Main Content -->
+    <section id="main-content" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">КОНТАКТЫ <span class="red-accent">ROCKSTORM</span></h2>
+            
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <h3 class="red-accent mb-4">О НАС</h3>
+                    <p class="lead">Мы — <strong>ROCKSTORM EVENTS</strong>, команда фанатов рока, которая превращает музыкальные мечты в реальность.</p>
+                    <p>С 2010 года мы привозим в Брянск лучшие мировые и российские группы, создавая незабываемые шоу с безупречной организацией.</p>
+                    <p><strong>Linkin Park в Брянске — наш главный ивент 2025 года.</strong> Мы сделали всё, чтобы этот концерт стал событием десятилетия!</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9413.37364741891!2d34.3587893!3d53.2435624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d05e5e8e9c0e5%3A0x1b0b5a5b5b5b5b5b!2z0JHQuNGC0LDQudGB0LrQuNC5!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h3 class="red-accent mb-4">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-map-marker-alt red-accent me-2"></i> <strong>Адрес:</strong> Брянск, ул. Рок-н-Ролльная, 15, БЦ "АРЕНА", 5 этаж</li>
+                        <li class="mb-3"><i class="fas fa-phone red-accent me-2"></i> <strong>Телефон:</strong> +7 (4832) 123-456</li>
+                        <li class="mb-3"><i class="fas fa-envelope red-accent me-2"></i> <strong>Email:</strong> info@rockstorm.ru</li>
+                        <li><i class="fas fa-clock red-accent me-2"></i> <strong>Часы работы:</strong> Пн-Пт 10:00–20:00, Сб-Вс 12:00–18:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="red-accent mb-4">СОЦИАЛЬНЫЕ СЕТИ</h3>
+                    <div class="d-flex justify-content-start gap-4">
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4 red-accent">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+                    <form class="contact-form p-4">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Ваш вопрос..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100 py-2 fw-bold">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center mb-4 red-accent">ПОЧЕМУ ВЫБИРАЮТ ROCKSTORM EVENTS?</h3>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-card p-3 text-center">
+                                <i class="fas fa-guitar red-accent mb-3" style="font-size: 2rem;"></i>
+                                <h4 class="text-white">ТОЛЬКО ЛУЧШИЕ ИВЕНТЫ</h4>
+                                <p>Мы работаем только с топовыми артистами и делаем шоу мирового уровня.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-card p-3 text-center">
+                                <i class="fas fa-headphones red-accent mb-3" style="font-size: 2rem;"></i>
+                                <h4 class="text-white">ИДЕАЛЬНЫЙ ЗВУК</h4>
+                                <p>Наши инженеры настраивают звук так, чтобы он бил прямо в сердце.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="feature-card p-3 text-center">
+                                <i class="fas fa-medal red-accent mb-3" style="font-size: 2rem;"></i>
+                                <h4 class="text-white">10 ЛЕТ НА РЫНКЕ</h4>
+                                <p>Более 50 крупных концертов и 100% довольных зрителей.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer
+      class="bg-dark text-white"
+      style="padding-top: 0.1rem; padding-bottom: 0.5rem"
+    >
+      <div class="container">
+        <!-- Соцсети -->
+        <div class="text-center footer-icons">
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <!-- Две колонки -->
+        <div class="row mt-4">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9413.37364741891!2d34.3587893!3d53.2435624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d05e5e8e9c0e5%3A0x1b0b5a5b5b5b5b5b!2z0JHQuNGC0LDQudGB0LrQuNC5!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-form">
+              <h3 class="text-center mb-4">Заказать билеты</h3>
+              <form id="tickets">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ваше имя"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Ваш email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Ваш возраст"
+                    min="1"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <select class="form-select" required>
+                    <option value="" disabled selected>
+                      Выберите тип билета
+                    </option>
+                    <option value="vip">VIP - 10 000 руб.</option>
+                    <option value="gold">Gold - 7 000 руб.</option>
+                    <option value="silver">Silver - 5 000 руб.</option>
+                    <option value="regular">Regular - 3 000 руб.</option>
+                  </select>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-danger">
+                    ЗАКАЗАТЬ БИЛЕТЫ
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 pt-3 border-top">
+          <p>&copy; 2025 Linkin Park Concert in Брянск. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Инициализируем AOS
+      AOS.init({
+        once: false, // Анимация будет повторяться при каждой прокрутке
+        easing: "ease", // Плавное замедление в конце
+      });
+    </script>
+  </body>
+</html>

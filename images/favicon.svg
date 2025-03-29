@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 937.59">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        filter: url(#drop-shadow-2);
+        font-size: 136.8px;
+      }
+
+      .st0, .st1 {
+        fill: #fff;
+        font-family: ReemKufi-Regular, 'Reem Kufi';
+      }
+
+      .st2 {
+        filter: url(#drop-shadow-1);
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        filter: url(#drop-shadow-3);
+        font-size: 168.73px;
+      }
+    </style>
+    <filter id="drop-shadow-1" x="-14" y="-22.41" width="1028" height="980" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#fff" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur1" stdDeviation="8"/>
+      <feFlood flood-color="#000" flood-opacity="1"/>
+      <feComposite in2="blur1" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur2" stdDeviation="8"/>
+      <feFlood flood-color="#000" flood-opacity="1"/>
+      <feComposite in2="blur2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <polygon class="st2" points="500.03 8.47 614.09 359.52 983.21 359.52 684.59 576.48 798.65 927.53 500.03 710.57 201.41 927.53 315.47 576.48 16.85 359.52 385.97 359.52 500.03 8.47"/>
+  <text class="st0" transform="translate(5.03 347.43) scale(1.12 1)"><tspan x="0" y="0">ROCKSTORM</tspan></text>
+  <text class="st1" transform="translate(159.54 803.22)"><tspan x="0" y="0">EVENTS</tspan></text>
+</svg>
