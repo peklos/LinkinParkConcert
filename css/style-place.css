@@ -76,3 +76,243 @@
         font-size: 1.8rem;
     }
 }
+
+/* Общие исправления адаптивности */
+@media (max-width: 768px) {
+  /* Исправление карточек альбомов */
+  .album-card {
+    padding: 15px !important;
+  }
+  
+  .album-card .d-flex {
+    flex-direction: column !important;
+  }
+  
+  .album-card img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 15px;
+    margin-right: 0 !important;
+  }
+  
+  /* Уменьшение отступов */
+  .album-details {
+    padding-top: 10px !important;
+  }
+  
+  /* Уменьшение размера заголовков */
+  .display-4 {
+    font-size: 2rem !important;
+  }
+  
+  /* Исправление формы в футере */
+  .footer-form {
+    padding: 15px;
+  }
+  
+  /* Фикс для карты */
+  .map-container {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  
+  /* Исправление сетки альбомов */
+  .col-lg-6 {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  /* Уменьшение размера текста */
+  .lead {
+    font-size: 1rem !important;
+  }
+  
+  /* Исправление прогресс-бара */
+  .sound-evolution .progress {
+    height: 8px !important;
+  }
+  
+  .sound-evolution .d-flex {
+    flex-wrap: wrap;
+  }
+  
+  .sound-evolution small {
+    font-size: 0.7rem !important;
+    margin-bottom: 5px;
+  }
+}
+
+/* Дополнительные исправления для очень маленьких экранов */
+@media (max-width: 576px) {
+  /* Уменьшение навигации */
+  .navbar-brand img {
+    height: 30px !important;
+  }
+  
+  /* Уменьшение заголовков */
+  h2 {
+    font-size: 1.3rem !important;
+  }
+  
+  /* Исправление бейджей */
+  .badge {
+    font-size: 0.7rem !important;
+    margin-bottom: 5px;
+    display: inline-block !important;
+  }
+  
+  /* Уменьшение формы */
+  .form-control, .form-select {
+    font-size: 0.9rem !important;
+    padding: 0.375rem 0.75rem !important;
+  }
+  
+  /* Уменьшение кнопок */
+  .btn {
+    padding: 0.375rem 0.75rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Исправление горизонтального скролла */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Фикс для карточек при наведении на мобильных */
+@media (hover: none) {
+  .album-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Исправления для диапазона 990-1400px */
+@media (min-width: 990px) and (max-width: 1400px) {
+  /* Контейнеры и общие отступы */
+  .container {
+    max-width: 95% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  /* Карточки альбомов */
+  .album-card {
+    padding: 20px !important;
+  }
+  
+  .album-card .d-flex {
+    flex-wrap: wrap;
+  }
+  
+  .album-card img {
+    width: 120px !important;
+    height: 120px !important;
+    margin-right: 15px !important;
+    margin-bottom: 15px;
+  }
+  
+  /* Текст в карточках */
+  .album-card h2 {
+    font-size: 1.3rem !important;
+  }
+  
+  .album-card p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Бейджи */
+  .badge {
+    font-size: 0.8rem !important;
+    margin-bottom: 5px;
+    white-space: normal !important;
+  }
+  
+  /* Футер */
+  .footer .row {
+    flex-direction: column;
+  }
+  
+  .footer .col-md-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .map-container {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  
+  /* Форма */
+  .footer-form {
+    padding: 0;
+  }
+  
+  /* Навигация */
+  .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin: 0 10px 5px 0;
+  }
+  
+  /* Прогресс-бар эволюции звука */
+  .sound-evolution .progress {
+    height: 10px !important;
+  }
+  
+  .sound-evolution .d-flex {
+    flex-wrap: wrap;
+  }
+  
+  .sound-evolution small {
+    font-size: 0.7rem !important;
+    margin-bottom: 5px;
+  }
+}
+
+/* Дополнительные исправления для предотвращения "уплывания" */
+@media (min-width: 768px) {
+  /* Фиксируем максимальную ширину контента */
+  .album-card {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Гарантируем, что изображения не выходят за границы */
+  .img-thumbnail {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Фикс для длинного текста */
+  .album-details p {
+    word-break: break-word;
+  }
+  
+  /* Обеспечиваем правильное поведение сетки */
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .col-lg-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Гарантированное предотвращение горизонтального скролла */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  position: relative;
+}
